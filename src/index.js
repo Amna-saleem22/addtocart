@@ -7,17 +7,20 @@ import { BrowserRouter } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import { WishlistProvider } from "./context/WishlistContext";
 import { ThemeProvider } from "./context/ThemeContext";
+import { HelmetProvider } from "react-helmet-async";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <ThemeProvider>
-      <CartProvider>
-        <WishlistProvider>
-          <App />
-        </WishlistProvider>
-      </CartProvider>
-    </ThemeProvider>
-  </BrowserRouter>
+  <HelmetProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <CartProvider>
+          <WishlistProvider>
+            <App />
+          </WishlistProvider>
+        </CartProvider>
+      </ThemeProvider>
+    </BrowserRouter>
+  </HelmetProvider>
 );
 
 reportWebVitals();

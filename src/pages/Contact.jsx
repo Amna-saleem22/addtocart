@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiPhone, FiMapPin, FiClock, FiInstagram, FiFacebook, FiTwitter, FiSend } from "react-icons/fi";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import SEO from "../components/ui/SEO";
 import toast from "react-hot-toast";
 
 const fadeUp = { hidden: { opacity: 0, y: 40 }, visible: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1 } }) };
@@ -35,6 +36,7 @@ const Contact = () => {
 
   return (
     <div className="page-content">
+      <SEO title="Contact Us" description="Get in touch with LUXE Couture. Reach us by email, phone, or visit our store in Lahore, Pakistan." url="/contact" />
       <div style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border)" }}>
         <div className="container-luxe"><Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact" }]} /></div>
       </div>

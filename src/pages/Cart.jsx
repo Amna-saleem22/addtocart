@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiTrash2, FiShoppingBag, FiTag, FiArrowRight, FiPlus, FiMinus } from "react-icons/fi";
 import { useCart } from "../context/CartContext";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import SEO from "../components/ui/SEO";
 import toast from "react-hot-toast";
 
 const COUPONS = { "LUXE20": 20, "WELCOME10": 10, "SALE15": 15 };
@@ -40,6 +41,7 @@ const Cart = () => {
 
   return (
     <div className="page-content">
+      <SEO title="My Cart" description="Review your selected items and proceed to checkout. Free delivery on orders over PKR 5,000." url="/cart" />
       <div style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border)" }}>
         <div className="container-luxe"><Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Cart" }]} /></div>
       </div>

@@ -5,6 +5,7 @@ import { FiX, FiSearch, FiSliders } from "react-icons/fi";
 import ProductCard from "../components/ui/ProductCard";
 import { SkeletonGrid } from "../components/ui/SkeletonCard";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import SEO from "../components/ui/SEO";
 import { products, categories, brands } from "../data/products";
 
 const sortOptions = [
@@ -123,6 +124,12 @@ const Shop = () => {
 
   return (
     <div className="page-content">
+      <SEO
+        title="Shop — All Collections"
+        description="Browse 12+ premium South Asian fashion pieces — Shalwar Kameez, Lehenga, Kurti, Sherwani & more. Filter by category, brand, and price."
+        url="/shop"
+        keywords="buy Shalwar Kameez online, Lehenga shop, Pakistani clothes online, South Asian fashion store"
+      />
       <div style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border)", padding: "0 0 0.5rem" }}>
         <div className="container-luxe">
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Shop" }]} />

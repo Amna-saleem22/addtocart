@@ -4,6 +4,7 @@ import { FiTrash2, FiShoppingBag, FiHeart } from "react-icons/fi";
 import { useWishlist } from "../context/WishlistContext";
 import { useCart } from "../context/CartContext";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import SEO from "../components/ui/SEO";
 
 const Wishlist = () => {
   const { wishlist, removeFromWishlist } = useWishlist();
@@ -25,6 +26,7 @@ const Wishlist = () => {
 
   return (
     <div className="page-content">
+      <SEO title="My Wishlist" description="Your saved LUXE Couture favourites — ready to add to cart whenever you are." url="/wishlist" />
       <div style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border)" }}>
         <div className="container-luxe"><Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Wishlist" }]} /></div>
       </div>

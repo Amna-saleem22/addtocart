@@ -125,10 +125,10 @@ const Footer = () => {
           <p style={{ fontSize: "0.8rem", color: "#6b7280" }}>© 2024 LUXE Couture. All rights reserved.</p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {["Privacy Policy", "Terms of Service", "Refund Policy"].map(l => (
-              <a key={l} href="#" style={{ fontSize: "0.8rem", color: "#6b7280", textDecoration: "none", transition: "color 0.2s" }}
-                onMouseEnter={e => e.currentTarget.style.color = "#c9a96e"}
+              <button key={l} style={{ fontSize: "0.8rem", color: "#6b7280", textDecoration: "none", background: "none", border: "none", cursor: "pointer", padding: 0, fontFamily: "Inter, sans-serif", transition: "color 0.2s" }}
+                onMouseEnter={e => e.currentTarget.style.color = "#4F46E5"}
                 onMouseLeave={e => e.currentTarget.style.color = "#6b7280"}
-              >{l}</a>
+              >{l}</button>
             ))}
           </div>
         </div>

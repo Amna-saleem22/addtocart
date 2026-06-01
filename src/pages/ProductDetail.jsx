@@ -8,6 +8,7 @@ import { useWishlist } from "../context/WishlistContext";
 import { getProductById, getRelatedProducts } from "../data/products";
 import ProductCard from "../components/ui/ProductCard";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import SEO from "../components/ui/SEO";
 import toast from "react-hot-toast";
 
 const ProductDetail = () => {
@@ -51,6 +52,16 @@ const ProductDetail = () => {
 
   return (
     <div className="page-content">
+      <SEO
+        title={`${product.name} by ${product.brand}`}
+        description={product.description || `Buy ${product.name} by ${product.brand}. PKR ${product.price.toLocaleString()}. ${product.inStock ? "In Stock" : "Out of Stock"}.`}
+        image={product.images[0]}
+        url={`/product/${product.id}`}
+        type="product"
+        keywords={`${product.name}, ${product.brand}, ${product.category}, buy online Pakistan`}
+        product={product}
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Shop", href: "/shop" }, { label: product.category, href: `/shop?category=${product.category}` }, { label: product.name, href: `/product/${product.id}` }]}
+      />
       <div style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border)" }}>
         <div className="container-luxe">
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Shop", href: "/shop" }, { label: product.category, href: `/shop?category=${product.category}` }, { label: product.name }]} />

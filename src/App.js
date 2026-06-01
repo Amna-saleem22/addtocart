@@ -14,6 +14,7 @@ const Confirmation = lazy(() => import("./pages/Confirmation"));
 const Wishlist = lazy(() => import("./pages/Wishlist"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
+const SearchResults = lazy(() => import("./pages/SearchResults"));
 
 const PageLoader = () => (
   <div className="page-content" style={{ padding: "3rem 0" }}>
@@ -31,10 +32,11 @@ function App() {
           style: {
             fontFamily: "Inter, sans-serif",
             fontSize: "0.875rem",
-            borderRadius: "10px",
+            borderRadius: "12px",
             padding: "0.875rem 1.25rem",
+            boxShadow: "0 8px 30px rgba(15,23,42,0.12)",
           },
-          success: { iconTheme: { primary: "#c9a96e", secondary: "#fff" } },
+          success: { iconTheme: { primary: "#4F46E5", secondary: "#fff" } },
         }}
       />
       <Navbar />
@@ -49,6 +51,7 @@ function App() {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/search" element={<SearchResults />} />
           <Route path="*" element={
             <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "70vh", gap: "1.5rem", textAlign: "center", padding: "2rem" }}>
               <div style={{ fontSize: "5rem", fontFamily: "serif" }}>404</div>

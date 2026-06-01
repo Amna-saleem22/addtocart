@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import Breadcrumb from "../components/ui/Breadcrumb";
+import SEO from "../components/ui/SEO";
 
 const fadeUp = { hidden: { opacity: 0, y: 40 }, visible: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1 } }) };
 
@@ -28,6 +29,7 @@ const values = [
 
 const About = () => (
   <div className="page-content">
+    <SEO title="Our Story" description="Born in Lahore, LUXE Couture was founded to bring world-class South Asian fashion to every doorstep. Learn our story." url="/about" keywords="LUXE Couture brand story, South Asian fashion brand Pakistan" />
     <div style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border)" }}>
       <div className="container-luxe"><Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About" }]} /></div>
     </div>

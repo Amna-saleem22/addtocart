@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FiArrowRight, FiStar, FiTruck, FiRefreshCw, FiShield, FiHeadphones } from "react-icons/fi";
 import ProductCard from "../components/ui/ProductCard";
 import { SkeletonGrid } from "../components/ui/SkeletonCard";
+import SEO from "../components/ui/SEO";
 import { getFeaturedProducts, getNewArrivals, getBestSellers, getTrendingProducts, categories } from "../data/products";
 
 const fadeUp = { hidden: { opacity: 0, y: 40 }, visible: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1, ease: [0.4, 0, 0.2, 1] } }) };
@@ -34,6 +35,12 @@ const Home = () => {
 
   return (
     <div className="page-content">
+      <SEO
+        title="Home"
+        description="LUXE Couture — Where tradition meets elegance. Shop premium South Asian fashion: Shalwar Kameez, Lehenga, Kurti, Sherwani & more."
+        url="/"
+        keywords="luxury fashion Pakistan, South Asian clothing, Shalwar Kameez, Lehenga, Kurti, Sherwani, bridal wear"
+      />
       {/* ── Hero ── */}
       <section style={{ minHeight: "100vh", background: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1400&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.25 }} />
