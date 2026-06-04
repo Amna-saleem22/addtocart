@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <div style={{ marginBottom: "1.25rem" }}>
               <div className="font-serif" style={{ fontSize: "2rem", fontWeight: 800, color: "#fff", letterSpacing: "-0.02em" }}>LUXE</div>
-              <div style={{ fontSize: "0.55rem", letterSpacing: "0.35em", color: "#c9a96e", fontWeight: 700, textTransform: "uppercase" }}>Couture</div>
+              <div style={{ fontSize: "0.55rem", letterSpacing: "0.35em", color: "#06B6D4", fontWeight: 700, textTransform: "uppercase" }}>Couture</div>
             </div>
             <p style={{ fontSize: "0.875rem", lineHeight: 1.8, color: "#9ca3af", marginBottom: "1.5rem", maxWidth: "260px" }}>
               Redefining South Asian fashion with premium quality, timeless designs, and unparalleled craftsmanship since 2020.
@@ -38,7 +38,7 @@ const Footer = () => {
                   border: "1px solid #2a2a2a", display: "flex", alignItems: "center", justifyContent: "center",
                   color: "#9ca3af", textDecoration: "none", transition: "all 0.2s",
                 }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = "#c9a96e"; e.currentTarget.style.color = "#c9a96e"; }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = "#06B6D4"; e.currentTarget.style.color = "#c9a96e"; }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = "#2a2a2a"; e.currentTarget.style.color = "#9ca3af"; }}
                 >{s.icon}</a>
               ))}
@@ -47,14 +47,17 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "1.25rem" }}>Quick Links</h4>
-            {[{ label: "Home", href: "/" }, { label: "Shop", href: "/shop" }, { label: "About Us", href: "/about" }, { label: "Contact", href: "/contact" }, { label: "Cart", href: "/cart" }, { label: "Wishlist", href: "/wishlist" }].map(l => (
+            <h4 style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em",
+               textTransform: "uppercase", color: "#06B6D4", marginBottom: "1.25rem" }}>Quick Links</h4>
+            {[{ label: "Home", href: "/" }, { label: "Shop", href: "/shop" }, { label: "About Us", href: "/about" },
+             { label: "Contact", href: "/contact" }, { label: "Cart", href: "/cart" },
+              { label: "Wishlist", href: "/wishlist" }].map(l => (
               <Link key={l.label} to={l.href} style={{
                 display: "flex", alignItems: "center", gap: "6px",
                 textDecoration: "none", color: "#9ca3af", fontSize: "0.875rem",
                 marginBottom: "0.625rem", transition: "color 0.2s",
               }}
-                onMouseEnter={e => e.currentTarget.style.color = "#c9a96e"}
+                onMouseEnter={e => e.currentTarget.style.color = "#06B6D4"}
                 onMouseLeave={e => e.currentTarget.style.color = "#9ca3af"}
               >
                 <FiArrowRight size={12} /> {l.label}
@@ -64,14 +67,14 @@ const Footer = () => {
 
           {/* Categories */}
           <div>
-            <h4 style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "1.25rem" }}>Categories</h4>
+            <h4 style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#06B6D4", marginBottom: "1.25rem" }}>Categories</h4>
             {["Men's Collection", "Women's Collection", "Bridal Wear", "Kids Wear", "Accessories", "Sale Items"].map(c => (
               <Link key={c} to="/shop" style={{
                 display: "flex", alignItems: "center", gap: "6px",
                 textDecoration: "none", color: "#9ca3af", fontSize: "0.875rem",
                 marginBottom: "0.625rem", transition: "color 0.2s",
               }}
-                onMouseEnter={e => e.currentTarget.style.color = "#c9a96e"}
+                onMouseEnter={e => e.currentTarget.style.color = "#06B6D4"}
                 onMouseLeave={e => e.currentTarget.style.color = "#9ca3af"}
               >
                 <FiArrowRight size={12} /> {c}
@@ -81,7 +84,7 @@ const Footer = () => {
 
           {/* Contact & Newsletter */}
           <div>
-            <h4 style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a96e", marginBottom: "1.25rem" }}>Stay Connected</h4>
+            <h4 style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#06B6D4", marginBottom: "1.25rem" }}>Stay Connected</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "1.5rem" }}>
               {[
                 { icon: <FiMapPin size={14} />, text: "123 Fashion St, Lahore, Pakistan" },
@@ -89,7 +92,7 @@ const Footer = () => {
                 { icon: <FiMail size={14} />, text: "hello@luxecouture.pk" },
               ].map((c, i) => (
                 <div key={i} style={{ display: "flex", gap: "10px", alignItems: "flex-start", color: "#9ca3af", fontSize: "0.875rem" }}>
-                  <span style={{ color: "#c9a96e", marginTop: "2px", flexShrink: 0 }}>{c.icon}</span> {c.text}
+                  <span style={{ color: "#06B6D4", marginTop: "2px", flexShrink: 0 }}>{c.icon}</span> {c.text}
                 </div>
               ))}
             </div>
@@ -108,7 +111,7 @@ const Footer = () => {
                 }}
               />
               <button type="submit" style={{
-                padding: "0.625rem 1rem", background: "#c9a96e", border: "none",
+                padding: "0.625rem 1rem", background: "#06B6D4", border: "none",
                 borderRadius: "8px", color: "#fff", cursor: "pointer", transition: "opacity 0.2s",
               }}
                 onMouseEnter={e => e.currentTarget.style.opacity = "0.85"}

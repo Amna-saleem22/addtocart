@@ -39,10 +39,10 @@ const About = () => (
       <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1200&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
       <div className="container-luxe" style={{ position: "relative", textAlign: "center" }}>
         <motion.div variants={fadeUp} initial="hidden" animate="visible">
-          <span className="section-tag" style={{ color: "#c9a96e" }}>Our Story</span>
+          <span className="section-tag" style={{ color: "#06B6D4" }}>Our Story</span>
           <h1 className="font-serif" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", fontWeight: 800, color: "#fff", lineHeight: 1.15, marginBottom: "1.5rem" }}>
             Crafting Elegance,<br />
-            <span style={{ color: "#c9a96e" }}>Celebrating Heritage</span>
+            <span style={{ color: "#06B6D4" }}>Celebrating Heritage</span>
           </h1>
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "1.1rem", lineHeight: 1.8, maxWidth: "600px", margin: "0 auto" }}>
             Born in Lahore, LUXE Couture was founded with a singular purpose — to bring world-class South Asian fashion to every doorstep.

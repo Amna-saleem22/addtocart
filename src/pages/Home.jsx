@@ -48,7 +48,7 @@ const Home = () => {
         <div className="container-luxe" style={{ position: "relative", zIndex: 1, paddingTop: "2rem", paddingBottom: "4rem" }}>
           <div style={{ maxWidth: "680px" }}>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <span className="section-tag" style={{ color: "#c9a96e" }}>New Collection 2024</span>
+              <span className="section-tag" style={{ color: "#06B6D4" }}>New Collection 2024</span>
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}
@@ -56,7 +56,7 @@ const Home = () => {
               style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)", fontWeight: 800, color: "#fff", lineHeight: 1.1, marginBottom: "1.5rem" }}
             >
               Where Tradition<br />
-              <span style={{ color: "#c9a96e" }}>Meets Elegance</span>
+              <span style={{ color: "#06B6D4" }}>Meets Elegance</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
@@ -92,7 +92,7 @@ const Home = () => {
           >
             {[{ num: "50K+", label: "Happy Customers" }, { num: "500+", label: "Premium Products" }, { num: "15+", label: "Brand Partners" }, { num: "98%", label: "Satisfaction Rate" }].map(s => (
               <div key={s.label}>
-                <div className="font-serif" style={{ fontSize: "2rem", fontWeight: 700, color: "#c9a96e" }}>{s.num}</div>
+                <div className="font-serif" style={{ fontSize: "2rem", fontWeight: 700, color: "#06B6D4" }}>{s.num}</div>
                 <div style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.55)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{s.label}</div>
               </div>
             ))}
@@ -111,7 +111,8 @@ const Home = () => {
       {/* ── Features Bar ── */}
       <section style={{ background: "var(--secondary)", padding: "1.25rem 0" }}>
         <div className="container-luxe">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+             gap: "1rem" }}>
             {[
               { icon: <FiTruck size={18} />, text: "Free Shipping over PKR 5000" },
               { icon: <FiRefreshCw size={18} />, text: "Easy 30-Day Returns" },
@@ -134,7 +135,7 @@ const Home = () => {
             {[
               { title: "Men's Collection", sub: "Shalwar Kameez, Sherwani & more", href: "/shop?category=Men", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", span: 1 },
               { title: "Women's Collection", sub: "Kurti, Lehenga, Anarkali & more", href: "/shop?category=Women", img: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80", span: 1 },
-              { title: "Bridal Couture", sub: "For the most special day", href: "/shop?category=Bridal", img: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&q=80", span: 1 },
+              { title: "Bridal Couture", sub: "For the most special day", href: "/shop?category=Bridal", img: "https://www.ammarakhan.com/cdn/shop/files/17_714dc8d2-e63c-436a-8a25-aff18f714f44.jpg?format=webp&v=1752764765&width=320", span: 1 },
             ].map((c, i) => (
               <motion.div key={i} variants={fadeUp} initial="hidden" whileInView="visible" custom={i} viewport={{ once: true }}>
                 <Link to={c.href} style={{ textDecoration: "none", display: "block" }}>
@@ -146,7 +147,7 @@ const Home = () => {
                     <div style={{ position: "absolute", bottom: "1.5rem", left: "1.5rem", color: "#fff" }}>
                       <div className="font-serif" style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: "4px" }}>{c.title}</div>
                       <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.75)" }}>{c.sub}</div>
-                      <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", marginTop: "10px", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#c9a96e" }}>
+                      <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", marginTop: "10px", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#06B6D4" }}>
                         Shop Now <FiArrowRight size={12} />
                       </div>
                     </div>
@@ -186,11 +187,11 @@ const Home = () => {
           >
             <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "45%", backgroundImage: "url(https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.3 }} />
             <div style={{ position: "relative", zIndex: 1 }}>
-              <span style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a96e", display: "block", marginBottom: "0.75rem" }}>
+              <span style={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#06B6D4", display: "block", marginBottom: "0.75rem" }}>
                 Limited Time Offer
               </span>
               <h2 className="font-serif" style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 800, color: "#fff", lineHeight: 1.15, marginBottom: "1rem" }}>
-                Up to <span style={{ color: "#c9a96e" }}>30% OFF</span><br />on Bridal Collections
+                Up to <span style={{ color: "#06B6D4" }}>30% OFF</span><br />on Bridal Collections
               </h2>
               <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.95rem", lineHeight: 1.7, maxWidth: "420px", marginBottom: "2rem" }}>
                 Celebrate the most beautiful day in life with our exquisite bridal couture. Handcrafted with love, designed to last forever.
