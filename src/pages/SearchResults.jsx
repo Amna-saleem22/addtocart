@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiX, FiSliders, FiArrowLeft, FiSearch } from "react-icons/fi";
+import { FiX, FiSliders, FiArrowLeft } from "react-icons/fi";
 import ProductCard from "../components/ui/ProductCard";
 import SEO from "../components/ui/SEO";
 import { products } from "../data/products";
